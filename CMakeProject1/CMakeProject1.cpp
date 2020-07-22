@@ -19,7 +19,7 @@ void func(int i)
     }
     if (i == 90)
     {
-        throw std::exception("ninety");
+        throw std::runtime_error("ninety");
     }
     vec.push_back(i);
 }
