@@ -1,0 +1,12 @@
+{
+    "$schema": "./devinit.schema.json",
+    "comments": "Install a local WSL Ubuntu 20.04 installation.",
+    "run": [
+        {
+            "comments": "Install Ubuntu 20.04 using WSL2, and configure it with various packages.",
+            "tool": "wsl-install",
+            "input": "https://aka.ms/wslubuntu2004",
+            "additionalOptions": "--wsl-version 2 --post-create-command 'apt-get update && apt-get install g++ gcc g++-9 gcc-9 cmake gdb ninja-build zip rsync -y'"
+        }
+    ]
+}
